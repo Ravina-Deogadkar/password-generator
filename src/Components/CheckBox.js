@@ -5,7 +5,7 @@ const CheckBox = (props) => {
   const setSetting =  props.setSetting;
   const setting = props.setting;
   const id = props.id;
-  const checkboxValue = id==="lowercase"?"true":"";
+  const checkboxValue = props.setting[id]===true?"true":"";
   const handleChange = (event)=>{
     setting[id] = event.target.checked;
     setSetting(setting);  //why this doesn't do shit

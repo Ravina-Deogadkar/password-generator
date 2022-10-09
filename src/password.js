@@ -5,7 +5,7 @@ const symbols = `!@#$%^&*`
 
 export default function generatePassword(length , setting){
     let password = '';
-    const listOfTypes = ["al"];
+    const listOfTypes = [];
     if(setting.upperCase === true)
     listOfTypes.push("up_al");
     if(setting.symbol ===true)
